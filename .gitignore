@@ -1,0 +1,22 @@
+# Secrets and local config
+.env
+*.key
+*.pem
+
+# Local databases
+*.db
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Scan artifacts
+*.sarif
+
+# IDE
+.idea/
+.vscode/

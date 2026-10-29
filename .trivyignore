@@ -1,0 +1,4 @@
+# Trivy vulnerability IDs to ignore, with a reason and a review date each.
+# Empty by default: every finding should be triaged here explicitly rather than
+# silenced globally. Example of the expected format:
+# CVE-0000-00000  # not reachable: dev-only dep; re-check 2026-12

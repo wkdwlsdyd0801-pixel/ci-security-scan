@@ -1,0 +1,16 @@
+# gitleaks config. Extends the default ruleset (hundreds of secret patterns)
+# and adds an allowlist so documented placeholders do not trip the scan.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Placeholders and examples that are not real secrets"
+paths = [
+  '''\.env\.example''',
+  '''README\.md''',
+]
+# The literal placeholder values shipped in .env.example.
+regexes = [
+  '''replace-with-your-own-value''',
+  '''changeme''',
+]

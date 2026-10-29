@@ -1,0 +1,6 @@
+# Bandit config for the gating scan. The CI passes this file with -c.
+# We scan src/ only for the gate; examples/ and tests/ are excluded because they
+# hold intentional anti-patterns and test fixtures, not shipped code.
+exclude_dirs:
+  - examples
+  - tests
